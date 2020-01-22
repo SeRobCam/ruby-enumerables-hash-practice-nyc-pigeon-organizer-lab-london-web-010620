@@ -1,4 +1,4 @@
-
+require 'pry'
 # pigeon_data = {
 #   :color => {
 #     :purple => ["Theo", "Peter Jr.", "Lucky"],
@@ -45,6 +45,7 @@ def nyc_pigeon_organizer(pigeon_data)
   end
     
   pigeon_data[:gender].each do |key,value|
+    binding.pry
       value.each do |pigeon_name|
         pigeon_list.keys.each do |pigeon|
           if pigeon === pigeon_name
