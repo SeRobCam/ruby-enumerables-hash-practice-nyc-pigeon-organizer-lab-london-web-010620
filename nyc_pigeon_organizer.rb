@@ -56,7 +56,6 @@ def nyc_pigeon_organizer(pigeon_data)
 
   pigeon_data[:lives].each do |key,value|
       value.each do |pigeon_name|
-    
         pigeon_list.keys.each do |pigeon|
           if pigeon === pigeon_name
             pigeon_list[pigeon][:lives] << key.to_s
